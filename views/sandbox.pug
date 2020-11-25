@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title My sandbox
+  body
+    table
+        tr
+            th First Name 
+            th Last Name 
+
+                each name in names    
+                    tr                   
+                        td(style={border: '1px solid black', color: 'red', background: 'green'}) #{name.split( ' ' )[0]} 
+                        td #{name.split( ' ' )[1]}
